@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/cookie</item>
+        <item>@font/kalam_light</item>
+        <item>@font/parisie</item>
+        <item>@font/parisienne</item>
+        <item>@font/rochester</item>
+    </array>
+</resources>

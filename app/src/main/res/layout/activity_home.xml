@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/hamburger"
+        android:layout_width="42dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notes" />
+
+    <ImageButton
+        android:id="@+id/cart"
+        android:layout_width="34dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/local_grocery_store" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="361dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hamburger">
+
+        <TextView
+            android:id="@+id/Hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/Hello"
+            android:textColor="@color/accent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButton39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary"
+            app:srcCompat="@drawable/account_circle" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editSearch"
+        android:layout_width="314dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/searchBar"
+        android:ems="10"
+        android:hint="@string/search"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/SearchBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <ImageButton
+        android:id="@+id/SearchBtn"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <TextView
+        android:id="@+id/findFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/findfood"
+        android:textColor="@color/secondary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSearch" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/secondary"
+        android:src="@drawable/food_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findFood" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/primary"
+        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:layout_constraintTop_toTopOf="@+id/imageButton8"
+        app:srcCompat="@drawable/pizza1_1" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imageButton9"
+        app:layout_constraintTop_toTopOf="@+id/imageButton9"
+        app:srcCompat="@drawable/burger_1" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton10"
+        app:layout_constraintTop_toTopOf="@+id/imageButton10"
+        app:srcCompat="@drawable/juicee_1" />
+
+    <TextView
+        android:id="@+id/offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/offer"
+        android:textColor="@color/secondary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton9" />
+
+    <ImageView
+        android:id="@+id/ImgOffer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offer"
+        app:srcCompat="@drawable/offer" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgOffer">
+
+        <TextView
+            android:id="@+id/RecMeals"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="@string/recMeals"
+            android:textColor="@color/secondary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/seeMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/seeMore"
+            android:textColor="@color/secondary"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="110dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton12"
+        app:layout_constraintStart_toEndOf="@+id/PizzaImg"
+        app:layout_constraintTop_toTopOf="@+id/PizzaImg"
+        app:srcCompat="@drawable/cheeseburger_1" />
+
+    <ImageButton
+        android:id="@+id/PizzaImg"
+        android:layout_width="110dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/primary"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:srcCompat="@drawable/seafood_1" />
+
+    <TextView
+        android:id="@+id/txtpizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@string/SeaFoodSpecial"
+        android:textColor="@color/accent"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/cheesBurger"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PizzaImg" />
+
+    <TextView
+        android:id="@+id/cheesBurger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/CheeseBurger"
+        android:textColor="@color/accent"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/frenchfries"
+        app:layout_constraintStart_toEndOf="@+id/PizzaImg"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="110dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:layout_constraintTop_toTopOf="@+id/imageButton6"
+        app:srcCompat="@drawable/images_1" />
+
+    <TextView
+        android:id="@+id/frenchfries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/FrenchFries"
+        android:textColor="@color/accent"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton12" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cheesBurger">
+
+        <TextView
+            android:id="@+id/Restaurants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/PopularRestaurants"
+            android:textColor="@color/secondary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/seeMore"
+            android:textColor="@color/secondary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="80dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/restaurantborder"
+        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintTop_toTopOf="@+id/imageButton7"
+        app:srcCompat="@drawable/burgerking" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="80dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/restaurantborder"
+        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/imageButton4"
+        app:srcCompat="@drawable/kfc" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="80dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/restaurantborder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:srcCompat="@drawable/pizzahut" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="80dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/restaurantborder"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintTop_toTopOf="@+id/imageButton5"
+        app:srcCompat="@drawable/mcdonalds" />
+
+    <TextView
+        android:id="@+id/pizzaHut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/PizzaHut"
+        android:textColor="@color/accent"
+        app:layout_constraintEnd_toStartOf="@+id/bKing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton7" />
+
+    <TextView
+        android:id="@+id/bKing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/BurgerKing"
+        android:textColor="@color/accent"
+        app:layout_constraintEnd_toStartOf="@+id/txtKFC"
+        app:layout_constraintStart_toEndOf="@+id/pizzaHut"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+    <TextView
+        android:id="@+id/txtKFC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/KFC"
+        android:textColor="@color/accent"
+        app:layout_constraintEnd_toStartOf="@+id/txtMcDonalds"
+        app:layout_constraintStart_toEndOf="@+id/bKing"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+
+    <TextView
+        android:id="@+id/txtMcDonalds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/McDonalds"
+        android:textColor="@color/accent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtKFC"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton13" />
+
+    <TextView
+        android:id="@+id/Txtall"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/all"
+        android:textColor="@color/accent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+
+    <TextView
+        android:id="@+id/txtPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/pizza"
+        android:textColor="@color/accent"
+        app:layout_constraintEnd_toStartOf="@+id/txtBurger"
+        app:layout_constraintStart_toEndOf="@+id/Txtall"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton9" />
+
+    <TextView
+        android:id="@+id/txtBurger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/Burger"
+        android:textColor="@color/accent"
+        app:layout_constraintEnd_toStartOf="@+id/txtJuice"
+        app:layout_constraintStart_toEndOf="@+id/txtPizza"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton10" />
+
+    <TextView
+        android:id="@+id/txtJuice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/Juice"
+        android:textColor="@color/accent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtBurger"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

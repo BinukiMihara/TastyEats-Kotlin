@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#FF000000</color>
+    <color name="primary">#FFFFFFFF</color>
+    <color name="secondary">#F4CA24</color>
+    <color name="orange">#FF6600</color>
+    <color name="searchBar">#DFDFDF</color>
+</resources>
